@@ -1,3 +1,4 @@
+properties([parameters([choice(choices: ['yes', 'No'], name: 'state')]), pipelineTriggers([pollSCM('* * * * * ')])])
 pipeline {
   agent any
     stages {
